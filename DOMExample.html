@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+   <button id="clickBtn">Click Me</button> 
+   <script> //creating JS functionality in script tag
+    //creating variable with ID
+    const clickBtn=document.getElementById('clickBtn')
+    //adding event listener 
+    clickBtn.addEventListener('click',function(){
+        alert("You just clicked a button")
+    })
+   </script>
+</body>
+</html>

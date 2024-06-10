@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Class</title>
+</head>
+<body>
+    <section class="section">This is a section 1</section>
+    <section class="section">This is a section 2</section>
+    <section class="section">This is section 3</section>
+    <script>
+        //making variable by selecting class
+      const sections=document.getElementsByClassName('section')
+    //   for(let i=0; i<sections.length; i++){
+    //     //adding style using js
+    //     sections[i].style= 'color:red , font-size:30px'
+    //   }
+    for(let i=0; i<sections.length; i++){
+        if(i==0){
+            sections[i].style='color:red; font-size:30px'
+        }else if(i==1){
+            sections[i].style='color:green; font-size:35px'
+        }else{
+            sections[i].style='color:blue; font-size:40px'
+        }
+    }
+    </script>
+
+</body>
+</html>

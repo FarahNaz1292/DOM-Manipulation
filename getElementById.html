@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element By Id</title>
+</head>
+<body>
+    
+    <p id="text">Hello World</p>
+    <button id="myButton">Click Me</button>
+    <script>
+        //using selector to get Element by ID
+        const text=document.getElementById('text')
+        const myButton=document.getElementById('myButton')
+        //adding event listener 
+        myButton.addEventListener('click',function(){
+            text.innerHTML="You just disturbed me by clicking on the button" //inner HTML will change the text in the P tag
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseOver and mouseOut Dom event</title>
+</head>
+<body>
+    <h1 id="mouse">This is code is for mouse Events</h1>
+    <script>
+        const mouse=document.getElementById('mouse')
+        mouse.addEventListener("mouseover",function(){
+            mouse.style.color='red';
+        })
+        mouse.addEventListener("mouseout",function(){
+            mouse.style.color='black';
+        })
+    </script>
+</body>
+</html>
